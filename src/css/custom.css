@@ -1,0 +1,290 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #2e8555;
+  --ifm-color-primary-dark: #29784c;
+  --ifm-color-primary-darker: #277148;
+  --ifm-color-primary-darkest: #205d3b;
+  --ifm-color-primary-light: #33925d;
+  --ifm-color-primary-lighter: #359962;
+  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --ifm-leading: 1rem;
+  --ifm-list-item-margin: 0.5rem;
+  --ifm-container-width-xl: 1575px; /* Example: increase to 1600px for extra large screens */
+  --ifm-container-width: 1575px;  /* Example: increase to 1280px for standard desktops */
+  --chic-blue-dark: #0069a8; /* A bit darker than Chicago Dark Blue #0075bb */
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-primary: #25c2a0;
+  --ifm-color-primary-dark: #21af90;
+  --ifm-color-primary-darker: #1fa588;
+  --ifm-color-primary-darkest: #1a8870;
+  --ifm-color-primary-light: #29d5b0;
+  --ifm-color-primary-lighter: #32d8b4;
+  --ifm-color-primary-lightest: #4fddbf;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+/* Personal alterations to the default template footer settings */
+
+.footer__bottom {
+  text-align: right;
+}
+
+.footer {
+  padding: 15px;
+}
+
+.footer .container {
+  max-width: 100%;
+  padding: 0 2rem;
+}
+
+/* Hides the Next/Previous links in all documents */
+.pagination-nav {
+  display: none;
+}
+
+.admonitionIcon_Rf37 {
+  display: none;
+}
+
+.theme-admonition-note {
+  background-color: #F8F8F8;
+}
+
+
+/* ------------------------------ Custom Body styles ------------------------------ */
+
+/* ---------- Link and Cardlist ---------- */
+
+.markdown a:link {
+  color: #0000EE;
+}
+
+/* This keeps the # link in markdown subheadings the default theme color and style instead of being blue and underlined */
+.markdown h2 a:link, .markdown h3 a:link, .markdown h4 a:link, .markdown h5 a:link, .markdown h2 a:visited, .markdown h3 a:visited, .markdown h4 a:visited, .markdown h5 a:visited {
+  color: var(--ifm-link-color);
+  text-decoration: none;
+}
+
+.markdown a:visited {
+  color: #551A8B;  
+  /*  color: var(--ifm-link-color); */
+}
+
+.markdown :link, :visited {
+  text-decoration: underline; cursor: pointer;
+}
+
+/* For manually created cardlists, this needs to go after any link modifications if you want to cardlist items to be default black and not underlined*/
+
+.MyCardList a:link {
+  text-decoration: none;
+}
+
+/* The cardlist label is an H2 */
+.MyCardList h2 {
+  color: black;
+}
+
+.MyCardList a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+/* ---------- Body styles ---------- */
+
+hr {
+  height: 2px;
+}
+
+h2 {
+  color: var(--chic-blue-dark);
+}
+
+h4 {
+  color: var(--chic-blue-dark);
+  font-size: 1.1rem;
+}
+
+.samplePreface {
+  border-radius: 15px;
+  font-style: italic;
+  background-color: #F8F8F8;
+  padding: 12px;
+  text-align: center;
+  width: 80%;
+  margin-bottom: 0px;
+}
+
+.code {
+  font-family: Courier New;
+  margin-left: 20px;
+}
+
+p.tickets
+{
+	font-size: 0.85rem;
+	font-style: italic;
+	margin-left: 10px;
+}
+
+p.compacted {
+    line-height: 1;
+}
+
+.smallCode {
+  font-family: Courier New;
+  margin-left: 20px;
+  font-size: 85%;
+}
+
+.markdown li p {
+  margin-top: var(--ifm-list-item-margin);
+  margin-bottom: var(--ifm-list-item-margin);
+}
+
+p.LVL_Pfx1::before
+{
+	font-family: 'Cambria Math'; 
+	content: "▸ ";
+}
+
+p.LVL_Pfx2::before
+{
+	font-family: 'Cambria Math'; 
+	content: "▸ ▸ ";
+}
+
+p.LVL_Pfx3::before
+{
+	font-family: 'Cambria Math'; 
+	content: "▸ ▸ ▸ ";
+}
+
+p.LVL_Pfx4::before
+{
+	font-family: 'Cambria Math'; 
+	content: "▸ ▸ ▸ ▸ ";
+}
+
+.bulletGridTwoCol {
+  width: 50%;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 10px 50px;
+}
+
+.bulletGridTwoCol li {
+  margin-top: 0px;
+}
+
+.flexContainerImg {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+
+/* ---------- div and generic block styles ---------- */
+
+.markdown div.center {
+  display: flex;
+  justify-content: center;
+}
+
+div.smallCodeBlock {
+  font-size: 85%;
+}
+
+.markdown .indent1 {
+  margin-left: 20px;
+}
+
+.markdown .indent2 {
+  margin-left: 40px;
+}
+
+/* ---------- Table styles ---------- */
+
+/* Standard table occupying full screen width */
+.markdown table.fullTable {
+  display: table;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Removed zebra stripe alternating row shading */
+.markdown table tr:nth-child(2n) {
+  background-color: transparent; 
+}
+
+/* Slightly compacts text in tables */
+.markdown td, td p {
+  margin-bottom: 0.6rem;
+  line-height: 1.5;
+  vertical-align: top;
+}
+
+/* Prevents the last paragraph in a table cell from creating a huge gap between bottom cell border */
+.markdown td p:last-child, .markdown td ul:last-child {
+  margin-bottom: 0;
+}
+
+.markdown col.method {
+  width: 75px;
+}
+
+.markdown td.getMethod {
+  border: 1px solid #61affe;
+  background-color: #61affe;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-weight: bold;
+  font-family: Arial;
+  font-size: 1.4rem;
+  color: #ffffff;
+}
+
+.markdown td.getUrl {
+  border: 1px solid #61affe;
+  background-color: #ebf3fb;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-family: 'Courier New';
+  font-size: 1.4rem;
+}
+
+.markdown td.postMethod {
+  border: 1px solid #49cc90;
+  background-color: #49cc90;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-weight: bold;
+  font-family: Arial;
+  font-size: 1.4rem;
+  color: #ffffff;
+}
+
+.markdown td.postUrl {
+  border: 1px solid #49cc90;
+  background-color: #e8f6f0;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-family: 'Courier New';
+  font-size: 1.4rem;
+}
+
+
