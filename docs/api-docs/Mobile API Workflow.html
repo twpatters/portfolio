@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-api-docs/Mobile API Workflow" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">Mobile API Workflow | Tom Patterson</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://twpatters.github.io/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://twpatters.github.io/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://twpatters.github.io/docs/api-docs/Mobile API Workflow"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Mobile API Workflow | Tom Patterson"><meta data-rh="true" name="description" content="This is an introductory chapter from a guide describing several possible expected workflows enabled by a small, HTTP web service API. The content below makes reference to other, excluded sections of the larger document from which this sample was excerpted."><meta data-rh="true" property="og:description" content="This is an introductory chapter from a guide describing several possible expected workflows enabled by a small, HTTP web service API. The content below makes reference to other, excluded sections of the larger document from which this sample was excerpted."><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://twpatters.github.io/docs/api-docs/Mobile API Workflow"><link data-rh="true" rel="alternate" href="https://twpatters.github.io/docs/api-docs/Mobile API Workflow" hreflang="en"><link data-rh="true" rel="alternate" href="https://twpatters.github.io/docs/api-docs/Mobile API Workflow" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Mobile API Workflow","item":"https://twpatters.github.io/docs/api-docs/Mobile API Workflow"}]}</script><link rel="stylesheet" href="/assets/css/styles.3fb5b1fe.css">
+<script src="/assets/js/runtime~main.9e32f9d0.js" defer="defer"></script>
+<script src="/assets/js/main.093a43e1.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>document.documentElement.setAttribute("data-theme","light"),document.documentElement.setAttribute("data-theme-choice","light"),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/img/TWPlogo.png"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><div class="navbar__logo"><img src="/img/TWPlogo.png" alt="Tom Patterson" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/img/TWPlogo.png" alt="Tom Patterson" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Home</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/docs/intro">Portfolio</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><div class="navbar__item"><a href="https://www.linkedin.com/in/tompattersonTW/" target="_blank"><img src="/img/LinkedIn.png" alt="LinkedIn"></a></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/intro"><span title="Portfolio Introduction" class="linkLabel_WmDU">Portfolio Introduction</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" href="/docs/api-docs/Enterprise Data Query API"><span title="API Documentation" class="categoryLinkLabel_W154">API Documentation</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api-docs/Enterprise Data Query API"><span title="Enterprise Data Query API" class="linkLabel_WmDU">Enterprise Data Query API</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/docs/api-docs/Mobile API Workflow"><span title="Mobile API Workflow" class="linkLabel_WmDU">Mobile API Workflow</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/docs/end-user-docs/Step-by-Step Procedures"><span title="End-User Documentation" class="categoryLinkLabel_W154">End-User Documentation</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/docs/tech-docs/Algorithm Description"><span title="Technical Documentation" class="categoryLinkLabel_W154">Technical Documentation</span></a></div></li></ul></nav><button type="button" title="Collapse sidebar" aria-label="Collapse sidebar" class="button button--secondary button--outline collapseSidebarButton_PEFL"><svg width="20" height="20" aria-hidden="true" class="collapseSidebarButtonIcon_kv0_"><g fill="#7a7a7a"><path d="M9.992 10.023c0 .2-.062.399-.172.547l-4.996 7.492a.982.982 0 01-.828.454H1c-.55 0-1-.453-1-1 0-.2.059-.403.168-.551l4.629-6.942L.168 3.078A.939.939 0 010 2.528c0-.548.45-.997 1-.997h2.996c.352 0 .649.18.828.45L9.82 9.472c.11.148.172.347.172.55zm0 0"></path><path d="M19.98 10.023c0 .2-.058.399-.168.547l-4.996 7.492a.987.987 0 01-.828.454h-3c-.547 0-.996-.453-.996-1 0-.2.059-.403.168-.551l4.625-6.942-4.625-6.945a.939.939 0 01-.168-.55 1 1 0 01.996-.997h3c.348 0 .649.18.828.45l4.996 7.492c.11.148.168.347.168.55zm0 0"></path></g></svg></button></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">API Documentation</span></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">Mobile API Workflow</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><div class="center"><p class="samplePreface">This is an introductory chapter from a guide describing several possible expected workflows enabled by a small, HTTP web service API. The content below makes reference to other, excluded sections of the larger document from which this sample was excerpted.</p></div>
+<hr>
+<header><h1>1.3 Expected API Workflow</h1></header>
+<p>The MobileProduct API may be used to develop 3rd party application according to each customer&#x27;s particular needs, but was built with the intent of supporting the following expected workflows:</p>
+<ul>
+<li class=""><a href="#131-form-assistant-app" class="">1.3.1 Form Assistant app</a></li>
+<li class=""><a href="#132-task-processing-app" class="">1.3.2 Task Processing app</a></li>
+<li class=""><a href="#133-timesheet-management-app" class="">1.3.3 Timesheet Management app</a></li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="131-form-assistant-app">1.3.1 Form Assistant app<a href="#131-form-assistant-app" class="hash-link" aria-label="Direct link to 1.3.1 Form Assistant app" title="Direct link to 1.3.1 Form Assistant app" translate="no">​</a></h2>
+<p>In this workflow, a 3rd party &quot;Form Assistant&quot; app runs alongside the MobileProduct app on the same mobile device (phone or tablet) and exchanges data to assist in filling out a MobileProduct form. At a high level, the standard expected workflow envisions a MobileProduct user beginning to fill out a task&#x27;s Collect Data form; launching the Form Assistant app via custom URL that includes the Collect Data form&#x27;s populated fields; using the Form Assistant app to perform supplemental work based on this data; and then returning to the MobileProduct app via custom URL that includes additional form data to be applied to the original Collect Data form.</p>
+<p>The following steps outline the expected Form Assistant app workflow in detail:</p>
+<ol>
+<li class="">
+<p>From the <strong>MobileProduct</strong> app, a user fills out several fields in a task&#x27;s <strong>Collect Data</strong> form.</p>
+</li>
+<li class="">
+<p>While viewing the Collect Data form, a user taps an <strong>Assistant</strong> button.</p>
+<p>The MobileProduct app launches the <strong>3rd party</strong> app via pre-configured URL scheme, supplying the app with the task&#x27;s unique identifier, the form instance&#x27;s unique identifier, the task&#x27;s position coordinates, and key/value pairs for every populated field in the form. For more information, see section <u>2.1.1 Collect Data Launch URLs</u>.</p>
+</li>
+<li class="">
+<p>The <strong>3rd party</strong> app uses the supplied form data to perform supplemental work.</p>
+</li>
+<li class="">
+<p>The <strong>3rd party</strong> app launches the <strong>MobileProduct</strong> app via pre-configured URL scheme, supplying the app with key/value pairs for one or more of the form&#x27;s fields.</p>
+<p>The MobileProduct app opens to the last displayed interface and applies the supplied field data to the same <strong>Collect Data</strong> form from which the 3rd party app was originally launched, if still available. For more information, see section <u>2.2 Launching the MobileProduct app</u>.</p>
+</li>
+</ol>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="132-task-processing-app">1.3.2 Task Processing app<a href="#132-task-processing-app" class="hash-link" aria-label="Direct link to 1.3.2 Task Processing app" title="Direct link to 1.3.2 Task Processing app" translate="no">​</a></h2>
+<p>In this workflow, a 3rd party &quot;Task Processing&quot; app runs alongside the MobileProduct app on the same mobile device (phone or tablet) and receives task data to enable supplemental task processing actions. At a high level, the standard expected workflow envisions a MobileProduct user launching the Task Processing app via custom URL upon either certain task state transitions or manual button press; the Task Processing app using HTTP requests to perform some supplemental work related to a task; and then returning to the MobileProduct app via hard-coded URL scheme.</p>
+<p>This workflow uses HTTP requests described in the following OpenAPI document included in the <strong>MobileProductAPI.zip</strong> package referenced in section <em>1.4 Artifacts</em>:</p>
+<p class="code">TaskProcSwagger.json</p>
+<p>The following steps outline the expected Task Processing app workflow in detail:</p>
+<ol>
+<li class="">
+<p>From the <strong>MobileProduct</strong> app, a user does one of the following:</p>
+<ul>
+<li class="">
+<p>User transitions a task to the <strong>En Route</strong> or <strong>On Site</strong> state.</p>
+<p>The MobileProduct app launches the <strong>3rd party</strong> app via pre-configured URL scheme, supplying the app with the transitioned task’s unique identifier, state, and position coordinates. For more information, see section <u>2.1.2 State Transition URLs</u>.</p>
+</li>
+<li class="">
+<p>While viewing a task in the <strong>On Site</strong> state, a user taps an <strong>External</strong> button.</p>
+<p>The MobileProduct app launches the <strong>3rd party</strong> app via pre-configured URL scheme, supplying the app with the task’s unique identifier, state, and position coordinates. For more information, see section <u>2.1.3 Task Launch URLs</u>.</p>
+</li>
+</ul>
+</li>
+<li class="">
+<p>The <strong>3rd party</strong> app uses any of the following HTTP requests to <strong>retrieve</strong> information from the MainProduct server:</p>
+<div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>note</div><div class="admonitionContent_BuS1"><p>For more information about any of the HTTP requests listed below, see <u>3 MobileProduct API HTTP Requests</u>.</p></div></div>
+<ul>
+<li class="">
+<p><code>GET /tasks/{tasknum}/details</code> - Returns detailed information about a specified task and its associated activities.</p>
+</li>
+<li class="">
+<p><code>GET /employees/{empid}</code> - Returns detailed information about a specified user.</p>
+</li>
+<li class="">
+<p><code>GET /employees/{empid}/tasks</code> - Returns a list of the tasks currently assigned to a specified user.</p>
+</li>
+</ul>
+</li>
+<li class="">
+<p>The <strong>3rd party</strong> app uses any of the following HTTP requests to <strong>send</strong> information back to the MainProduct server:</p>
+<ul>
+<li class="">
+<p><code>PUT /tasks/{tasknum}/collect</code> - Either submits a Collect Data form for a specified task, completes a specified task, or both at once.</p>
+</li>
+<li class="">
+<p><code>POST /main/request</code> - Submits an information request form.</p>
+</li>
+</ul>
+</li>
+<li class="">
+<p>The <strong>3rd party</strong> app launches the MobileProduct app using the following URL scheme:</p>
+<p class="indent1"><code>thismobileproduct://</code></p>
+<p>The MobileProduct opens to the interface from which the 3rd party app was originally launched, if still available. For more information, see section <u>2.2 Launching the MobileProduct App</u>.</p>
+</li>
+</ol>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="133-timesheet-management-app">1.3.3 Timesheet Management app<a href="#133-timesheet-management-app" class="hash-link" aria-label="Direct link to 1.3.3 Timesheet Management app" title="Direct link to 1.3.3 Timesheet Management app" translate="no">​</a></h2>
+<p>In this workflow, a 3rd party &quot;Timesheet Management&quot; app retrieves timesheet data entered by MobileProduct app users to track their time spent on various events. The Timesheet Management app is not required to run on the same mobile device as the MobileProduct app. At a high level, the standard expected workflow envisions a MobileProduct user submitting one or more timesheets throughout their day; a supervisor using the Timesheet Management app to retrieve a list of the MobileProduct user&#x27;s timesheets; and then that same supervisor using the Timesheet Management app to approve or deny a particular timesheet.</p>
+<p>This workflow uses HTTP requests described in the following OpenAPI document included in the <strong>MobileProductAPI.zip</strong> package referenced in section <em>1.4 Artifacts</em>:</p>
+<p class="code">TimesheetSwagger.json</p>
+<p>The following steps outline the expected Timesheet Management app workflow in detail:</p>
+<div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>note</div><div class="admonitionContent_BuS1"><p>For more information about any of the HTTP requests listed below, see <u>3 MobileProduct API HTTP Requests</u>.</p></div></div>
+<ol>
+<li class="">
+<p>From the <strong>MobileProduct</strong> app, a user creates and submits one or more timesheets to the MainProduct server.</p>
+</li>
+<li class="">
+<p>The <strong>3rd party</strong> app uses the following HTTP request to <strong>retrieve</strong> a list of timesheets submitted by a particular user within a specified timeframe:</p>
+<p class="indent1"><code>GET /employees/timesheets/{empid}/{startDateTime}/{endDateTime}</code></p>
+<p>The server responds with details about every timesheet submitted by the indicated user within the specified timeframe.</p>
+</li>
+<li class="">
+<p>The 3rd party app sends the following REST operation to either approve or deny a specified timesheet:</p>
+<p class="indent1"><code>POST /employees/timesheets/{timeSheetId}/review</code></p>
+</li>
+</ol></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/docs/api-docs/Enterprise Data Query API"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Enterprise Data Query API</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/docs/end-user-docs/Step-by-Step Procedures"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Step-by-Step Procedures</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#131-form-assistant-app" class="table-of-contents__link toc-highlight">1.3.1 Form Assistant app</a></li><li><a href="#132-task-processing-app" class="table-of-contents__link toc-highlight">1.3.2 Task Processing app</a></li><li><a href="#133-timesheet-management-app" class="table-of-contents__link toc-highlight">1.3.3 Timesheet Management app</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="footer__bottom text--center"><div class="footer__copyright">Built with Docusaurus <img src="/img/docusaurus.png" alt="Portfolio" width="20px" style="margin-bottom: -4px;"></div></div></div></footer></div>
+</body>
+</html>
