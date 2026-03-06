@@ -117,7 +117,12 @@ const config = {
           {
             type: 'html',
             position: 'right',
-            value: '<a href="https://www.linkedin.com/in/tompattersonTW/" target="_blank"><img src="/img/LinkedIn.png" alt="LinkedIn" /></a>',
+            value: '<a href="https://www.linkedin.com/in/tompattersonTW/" target="_blank"><img src="/portfolio/img/LinkedIn.png" alt="My LinkedIn Page" /></a>',
+          },
+          {
+            type: 'html',
+            position: 'right',
+            value: '<a href="https://github.com/twpatters/portfolio" target="_blank"><img src="/portfolio/img/GitHub27px.png" alt="My GitHub Page" /></a>',
           },
         ],
       },
@@ -164,7 +169,7 @@ const config = {
             ],
           },
         ], */
-        copyright: `Built with Docusaurus <img src="/img/docusaurus.png" alt="Portfolio" width="20px" style="margin-bottom: -4px;" />`,
+        copyright: `Built with Docusaurus <img src="/portfolio/img/docusaurus.png" alt="Docusaurus icon" width="20px" style="margin-bottom: -4px;" />`,
       },
       prism: {
         theme: prismThemes.github,

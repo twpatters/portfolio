@@ -90,6 +90,7 @@
 
 .MyCardList a:link {
   text-decoration: none;
+  color: black;
 }
 
 /* The cardlist label is an H2 */
