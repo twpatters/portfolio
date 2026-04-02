@@ -28,7 +28,7 @@ If you would like to see other samples of my work or wish to connect, please fee
     },
     {
         type: 'link',
-        href: './tech-docs/Algorithm Description',
+        href: './tech-docs/Cluster Deployment Preconditions',
         label: 'Technical Documentation',
         description: 'Content describing technical system behavior.'
     }

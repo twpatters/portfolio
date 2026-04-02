@@ -1,10 +1,10 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
 id: State Transition
 ---
 
 <div class="center">
-    <p class="samplePreface" >This page describes back-end system behavior resolving state transitions initiated by a SOAP API request. This content  makes reference to other, excluded sections of the larger document from which this sample was excerpted.</p>
+    <p class="samplePreface" >This page describes back-end system behavior resolving state transitions initiated by a SOAP API request. This content makes reference to other, excluded sections of the larger document from which this sample was excerpted.</p>
 </div>
 <hr />
 
