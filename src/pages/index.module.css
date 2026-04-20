@@ -35,6 +35,7 @@
   display: flex;
   margin-left: auto;
   margin-right: auto;
+  --ifm-link-color: var(--ifm-font-color-base);
 }
 
 .flexContainer figure {
@@ -46,14 +47,6 @@
 
 figcaption {
   margin-top: 10px;
-}
-
-a:visited {
-  color: black;
-}
-
-a:hover {
-  color: var(--ifm-link-color);
 }
 
 @media screen and (max-width: 996px) {
